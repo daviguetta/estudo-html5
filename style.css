@@ -1,0 +1,16 @@
+body{
+    
+    height: 650px;
+}
+header {
+    background-color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+footer{
+    background-color: yellow;
+    margin-top: 450px;
+}
+.box{
+    background-color: brown;
+}
