@@ -1,34 +1,254 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="_styles/reset.css" />
+    <link rel="stylesheet" href="_styles/style.css" />
+    <link rel="stylesheet" href="_styles/card.css" />
+    <link rel="stylesheet" href="_styles/modal.css" />
+    <link rel="stylesheet" href="_styles/projects.css" />
+    <link rel="stylesheet" href="_styles/aboutMe.css" />
+    <!--adicionar o favicon-->
+    <link rel="shortcurt icon" type="image/png" href="imagens/" />
+
     <title>David Moura | Dev fullstack</title>
- </head>
-<header>
-    <div id="name_dev">
-        <p>DM</p>
-    </div>
-</header>
-<body>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-item conteiner-name">
+        <div class="conteiner-name-dev">
+          <img src="" alt="" />
+        </div>
+        <h1 class="name-dev">David Moura | fullstack developer</h1>
+      </div>
+      <div class="header-item darkMode-button"></div>
+      <div class="header-item header-logo">
+        <a
+          href="https://www.linkedin.com/in/dmborges/"
+          target="_blank"
+          class="header-logo-linkedin"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-linkedin"
+          >
+            <path
+              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+            />
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a
+          href="https://github.com/daviguetta"
+          target="_blank"
+          class="header-logo-github"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-github"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
     <section id="portfolio_conteiner">
-        <div class="box">
-            <p class="box_text">ABOUT ME</p> <br>
-            <button class="box_button">read more</button>
-        </div>
-        <div class="box">
-            <p  class="box_text">PROJECTS</p >
-        </div>
-        <div class="box">
-            <p class="box_text">CONTACT</p>
-        </div>
+      <div onclick="openModal('.about-me')" class="box box-about">
+        <h2 class="box-text box-about">about me</h2>
+      </div>
+      <div onclick="openModal('.projects')" class="box box-projects">
+        <h2 class="box-text box-projects">projects</h2>
+      </div>
+      <div onclick="openModal('.contact')" class="box box-contact">
+        <h2 class="box-text box-contact">contact</h2>
+      </div>
     </section>
-</body>
-<footer>
-    <div>
-        <p>developed by <a href="https://www.instagram.com/devguetta/">@devguetta</a></p>
+
+    <!--Modal section-->
+    <div class="bg-modal about-me">
+      <div class="modal"></div>
+      <div class="modal-item modal-content">
+        <!--modal button close-->
+        <span onclick="closeModal('.about-me')" class="modal-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+        <!--Content about me-->
+        <h1 class="modal-content-itens header-modal">about me</h1>
+        <p class="modal-content-itens">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facere
+          similique assumenda et praesentium molestias labore ad repellat aut
+          aspernatur!
+        </p>
+        <h2 class="modal-content-itens title-skills">my skills</h2>
+        <div class="modal-content-itens skills">
+          <div class="skills-item">
+            <img src="_img/frontend.png" alt="icon frontend" />
+            <h6 class="skill skill-FrontEnd">Front-end</h6>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>Javascript</p>
+            <p>Vue.js</p>
+            <p>React</p>
+          </div>
+          <div class="skills-item">
+            <img src="_img/backend.png" alt="icon backend" />
+            <h6 class="skill skill-BackEnd">Back-end</h6>
+            <p>Python</p>
+            <p>SQL</p>
+            <p>Flask</p>
+            <p>Django</p>
+            <p></p>
+          </div>
+          <div class="skills-item">
+            <img src="_img/science.png" alt="icon data-science" />
+            <h6 class="skill skill-DataScience">Data Science & AI</h6>
+            <p>in comming</p>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
+    <!--Modal projects section-->
+    <div class="bg-modal projects">
+      <!--Modal content-->
+      <div class="modal-item modal-content content-projects">
+        <!--modal button close-->
+        <span
+          onclick="closeModal('.projects')"
+          class="modal-close close-projects"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+        <!--end close-button-->
+        <h1 class="title-projects">projects</h1>
+        <div class="menu-projects">
+          <nav id="menu-links">
+            <ul class="links">
+              <li class="link active">All</li>
+              <li class="link">Full-stack</li>
+              <li class="link">Front-end</li>
+              <li class="link">Data science</li>
+            </ul>
+          </nav>
+          <div class="content active">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              similique.
+            </p>
+          </div>
+          <div class="content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              cum!
+            </p>
+          </div>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+              ducimus!
+            </p>
+          </div>
+          <div class="content">...</div>
+        </div>
+      </div>
+    </div>
+    <!--Modal contact Section-->
+    <div class="bg-modal contact">
+      <!--Modal Content-->
+      <div class="modal-item modal-content">
+        <!--modal button close-->
+        <span onclick="closeModal('.contact')" class="modal-close"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+
+        <img class="banner-contact" src="_img/science.png" alt="" />
+        <h3>contact information</h3>
+        <p>davi.moura2@hotmail.com</p>
+        <p>or</p>
+        <ul id="contact-list">
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/dmborges/"></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/devguetta/"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div>
+      <p>
+        developed by
+        <a target="_blank" href="https://www.instagram.com/devguetta/"
+          >@devguetta</a
+        >
+      </p>
+    </div>
+  </footer>
+  <script src="_scripts/index.js"></script>
 </html>

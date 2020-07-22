@@ -1,0 +1,80 @@
+/* comentário */
+@import url("https://fonts.googleapis.com/css?family=Scada&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Scada', sans-serif, monospace;
+}
+
+body {
+    background-color: rgba(248,248,246);
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+header {
+    padding: 50px 103px 0px 103px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.header-item {
+    display: block;
+    width: 50%;
+    height: 80px;
+}
+
+.header-logo {
+    margin-left: auto;
+    position: relative;
+}
+
+.header-logo-linkedin {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    top: 28px;
+    right: 80px;
+}
+
+.header-logo-github {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    top: 28px;
+    right: 20px;
+}
+
+.feather {
+    cursor: pointer;
+}
+
+h1.name-dev {
+    display: none;
+}
+    
+#portfolio_conteiner {
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+footer{
+    position: relative;
+    font-size: small;
+    text-align: center;
+    justify-content: center;
+
+    color: #575965;
+}

@@ -1,0 +1,36 @@
+.box{
+    box-shadow: 
+        0 1px 4px rgba(0,0,0,0.12), 
+        0 1px 3px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    border-radius: 9px;
+    height: 350px;
+    width: 250px;
+    margin: 50px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.box-text {
+    position: absolute;
+
+    font-weight: normal;
+    font-size: 20px;
+    color: #575965;
+    text-transform: uppercase;
+
+    margin: 0;
+}
+
+.box:hover {
+    box-shadow: 
+        0 14px 28px rgba(0,0,0,0.25), 
+        0 10px 10px rgba(0,0,0,0.22);
+}

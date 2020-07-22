@@ -1,0 +1,55 @@
+
+.modal-content-itens {
+    margin: 0 50px;
+    margin-top: 30px;
+    padding: 8px 0;
+}
+p.modal-content-itens {
+    margin: 25px 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    color: rgba(147,148,152);
+
+}
+.header-modal {
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.title-skills {
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.skill {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+
+.skills {
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-item {
+    text-align: center;
+    width: 33%;
+}
+.skills-item p{
+    font-size: 13px;
+    color: rgba(147,148,152);
+}
+.modal-content {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    z-index: 1200;
+}

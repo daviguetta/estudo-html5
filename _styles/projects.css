@@ -1,0 +1,57 @@
+#menu-links ul li {
+  display: inline-block;
+}
+ul {
+  padding: 0;
+  text-align: center;
+}
+.link {
+  cursor: pointer;
+}
+.link:hover {
+  background: grey;
+}
+
+.content-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 85%;
+}
+
+.title-projects {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+
+.content {
+  display: none;
+  border-radius: 2px;
+  font-weight: 300;
+  min-width: 150px;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.links li {
+  padding: 5px 10px;
+}
+
+.links li.active {
+  background: black;
+  color: white;
+  transition: 0.3s ease-in-out background;
+}
+.content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

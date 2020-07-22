@@ -1,0 +1,42 @@
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.bg-modal {
+    animation: modal 1s;
+}
+
+.modal-content {
+    width: 50vw;
+    height: 85vh;
+    background-color: rgba(248, 248, 246);
+    z-index: 1000;
+    border-radius: 4px;
+
+    box-shadow: 0 12px 15px 0 rgba(87,89,101,0.25);
+}
+
+.modal-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    z-index: 1200;
+    cursor: pointer;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
